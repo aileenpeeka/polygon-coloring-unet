@@ -29,7 +29,7 @@ This project implements a UNet based model for polygon segmentation with color c
 
 - Loss steadily decreased for both training and validation sets, indicating good generalization.
 - Best model was saved based on lowest validation loss (0.81).
-- Training metrics and qualitative results were logged with [Weights & Biases](https://wandb.ai/peekaaileen-vellore-institute-of-technology/ayna-ml-assignment).
+- Training metrics and qualitative results were logged with [Weights & Biases](https://wandb.ai/peekaaileen314-personal/ayna-ml-assignment).
 
 ---
 
@@ -52,7 +52,7 @@ This project implements a UNet based model for polygon segmentation with color c
 
 - **Code and Dataset**: [GitHub Repository](https://github.com/aileenpeeka/polygon-coloring-unet)
 - **Trained Models**: [Google Drive Folder](https://drive.google.com/drive/folders/1l7JGHDUbOGKg-59sKNpKlNTePIZIV19z)
-- **Experiment Logs**: [WandB Project](https://wandb.ai/peekaaileen-vellore-institute-of-technology/ayna-ml-assignment)
+- **Experiment Logs**: [WandB Project](https://wandb.ai/peekaaileen314-personal/ayna-ml-assignment)
 
 ---
 
