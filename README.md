@@ -2,7 +2,7 @@
 
 This project implements a UNet based deep learning model for polygon segmentation with color conditioning. The model takes an input image and a color name and generates an output where polygons are filled with the specified color.
 
-## 🏗️ Architecture
+## Architecture
 
 ### UNet Model
 - **Input**: 4-channel image (3 RGB channels + 1 color condition channel)
@@ -17,7 +17,7 @@ The model uses a 4th channel to condition the segmentation on specific colors:
 - **Yellow**: RGB(1, 1, 0)
 - **Green**: RGB(0, 1, 0)
 
-## 📁 Project Structure
+## Project Structure
 
 ```
 ayna_ml_assignment/
@@ -39,7 +39,7 @@ ayna_ml_assignment/
 └── README.md               # This file
 ```
 
-## 🚀 Setup Instructions
+## Setup Instructions
 
 ### 1. Install Dependencies
 
@@ -88,7 +88,7 @@ Open `inference.ipynb` in Jupyter:
 jupyter notebook inference.ipynb
 ```
 
-## 🔧 Hyperparameters
+## Hyperparameters
 
 | Parameter | Value | Description |
 |-----------|-------|-------------|
@@ -99,7 +99,7 @@ jupyter notebook inference.ipynb
 | Optimizer | Adam | Adam optimizer with weight decay |
 | Scheduler | ReduceLROnPlateau | Learning rate reduction on plateau |
 
-## 📊 Training Dynamics
+## Training Dynamics
 
 ### Loss Curves
 The training script automatically generates and saves training curves showing:
@@ -114,7 +114,7 @@ All training metrics are logged to wandb including:
 - Model checkpoints
 - Training curves
 
-## 🎯 Model Performance
+## Model Performance
 
 ### Key Features
 - **Color Conditioning**: The model learns to segment polygons based on color conditions
@@ -127,7 +127,7 @@ All training metrics are logged to wandb including:
 - Output: Segmented image with polygons colored according to condition
 - The model should learn to identify polygon boundaries and apply the specified color
 
-## 🔍 Troubleshooting
+## Troubleshooting
 
 ### Common Issues
 
@@ -148,7 +148,7 @@ All training metrics are logged to wandb including:
 - Check wandb logs for training dynamics
 - Monitor GPU memory usage during training
 
-## 📈 Future Improvements
+## Future Improvements
 
 1. **Data Augmentation**
    - Rotation, scaling, flipping
@@ -170,7 +170,7 @@ All training metrics are logged to wandb including:
    - Dice coefficient
    - Pixel accuracy
 
-## 🔗 Model & Logs
+## Model & Logs
 
 - [📂 Download Trained Models](https://drive.google.com/drive/folders/1l7JGHDUbOGKg-59sKNpKlNTePIZIV19z)
 - [📊 Training Metrics on wandb](https://wandb.ai/peekaaileen-vellore-institute-of-technology/ayna-ml-assignment)
