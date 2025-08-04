@@ -1,6 +1,7 @@
 # Ayna ML Assignment - Polygon Segmentation with Color Conditioning
 
-This project implements a UNet-based deep learning model for polygon segmentation with color conditioning. The model takes an input image and a color name and generates an output where polygons are filled with the specified color.
+This project implements a UNet based deep learning model for polygon segmentation with color conditioning. The model takes an input image and a color name and generates an output where polygons are filled with the specified color.
+
 ## 🏗️ Architecture
 
 ### UNet Model
@@ -35,7 +36,7 @@ ayna_ml_assignment/
 ├── inference.ipynb         # Jupyter notebook for inference
 ├── utils.py                # Dataset loader and utilities
 ├── requirements.txt        # Python dependencies
-└── README.md              # This file
+└── README.md               # This file
 ```
 
 ## 🚀 Setup Instructions
@@ -169,26 +170,8 @@ All training metrics are logged to wandb including:
    - Dice coefficient
    - Pixel accuracy
 
-## 🤝 Contributing
+## 🔗 Model & Logs
 
-1. Fork the repository
-2. Create a feature branch
-3. Make your changes
-4. Add tests if applicable
-5. Submit a pull request
+- [📂 Download Trained Models](https://drive.google.com/drive/folders/1l7JGHDUbOGKg-59sKNpKlNTePIZIV19z)
+- [📊 Training Metrics on wandb](https://wandb.ai/peekaaileen-vellore-institute-of-technology/ayna-ml-assignment)
 
-## 📄 License
-
-This project is part of the Ayna ML Assignment.
-
-## 📞 Support
-
-For questions or issues:
-1. Check the troubleshooting section
-2. Review wandb logs for detailed metrics
-3. Test with the inference notebook
-4. Create an issue with detailed error information
-
----
-
-**Note**: This implementation includes robust error handling and fallback mechanisms for missing data, making it suitable for development and testing even without the complete dataset. 
