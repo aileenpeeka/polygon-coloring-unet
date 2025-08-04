@@ -1,0 +1,67 @@
+Using device: cpu
+Training samples: 1
+Validation samples: 1
+Model parameters: 31,044,227
+New best model saved! Val Loss: 1.0016
+Epoch 1/20: Train Loss: 1.1320 | Val Loss: 1.0016
+New best model saved! Val Loss: 0.9996
+Epoch 2/20: Train Loss: 0.9950 | Val Loss: 0.9996
+New best model saved! Val Loss: 0.9996
+Epoch 3/20: Train Loss: 0.9208 | Val Loss: 0.9996
+New best model saved! Val Loss: 0.9988
+Epoch 4/20: Train Loss: 0.8693 | Val Loss: 0.9988
+New best model saved! Val Loss: 0.9956
+Epoch 5/20: Train Loss: 0.8280 | Val Loss: 0.9956
+New best model saved! Val Loss: 0.9905
+Epoch 6/20: Train Loss: 0.7917 | Val Loss: 0.9905
+New best model saved! Val Loss: 0.9842
+Epoch 7/20: Train Loss: 0.7597 | Val Loss: 0.9842
+New best model saved! Val Loss: 0.9769
+Epoch 8/20: Train Loss: 0.7298 | Val Loss: 0.9769
+New best model saved! Val Loss: 0.9687
+Epoch 9/20: Train Loss: 0.7015 | Val Loss: 0.9687
+New best model saved! Val Loss: 0.9597
+Epoch 10/20: Train Loss: 0.6762 | Val Loss: 0.9597
+New best model saved! Val Loss: 0.9501
+Epoch 11/20: Train Loss: 0.6529 | Val Loss: 0.9501
+New best model saved! Val Loss: 0.9397
+Epoch 12/20: Train Loss: 0.6318 | Val Loss: 0.9397
+New best model saved! Val Loss: 0.9277
+Epoch 13/20: Train Loss: 0.6128 | Val Loss: 0.9277
+New best model saved! Val Loss: 0.9141
+Epoch 14/20: Train Loss: 0.5950 | Val Loss: 0.9141
+New best model saved! Val Loss: 0.8994
+Epoch 15/20: Train Loss: 0.5780 | Val Loss: 0.8994
+New best model saved! Val Loss: 0.8837
+Epoch 1/20 [Train]: 100%|█| 1/1 [00:01<00:00,  1.63s/it, loss=1.1320
+Epoch 1/20 [Val]: 100%|██| 1/1 [00:00<00:00,  1.89it/s, loss=1.0016]
+Epoch 2/20 [Train]: 100%|█| 1/1 [00:01<00:00,  1.31s/it, loss=0.9950
+Epoch 2/20 [Val]: 100%|██| 1/1 [00:00<00:00,  2.16it/s, loss=0.9996]
+Epoch 3/20 [Train]: 100%|█| 1/1 [00:01<00:00,  1.33s/it, loss=0.9208
+Epoch 3/20 [Val]: 100%|██| 1/1 [00:00<00:00,  2.08it/s, loss=0.9996]
+Epoch 4/20 [Train]: 100%|█| 1/1 [00:01<00:00,  1.30s/it, loss=0.8693
+Epoch 4/20 [Val]: 100%|██| 1/1 [00:00<00:00,  1.69it/s, loss=0.9988]
+Epoch 5/20 [Train]: 100%|█| 1/1 [00:01<00:00,  1.29s/it, loss=0.8280
+Epoch 5/20 [Val]: 100%|██| 1/1 [00:00<00:00,  2.13it/s, loss=0.9956]
+Epoch 6/20 [Train]: 100%|█| 1/1 [00:01<00:00,  1.32s/it, loss=0.7917
+Epoch 6/20 [Val]: 100%|██| 1/1 [00:00<00:00,  2.12it/s, loss=0.9905]
+Epoch 7/20 [Train]: 100%|█| 1/1 [00:01<00:00,  1.35s/it, loss=0.7597
+Epoch 7/20 [Val]: 100%|██| 1/1 [00:00<00:00,  2.18it/s, loss=0.9842]
+Epoch 8/20 [Train]: 100%|█| 1/1 [00:01<00:00,  1.30s/it, loss=0.7298
+Epoch 8/20 [Val]: 100%|██| 1/1 [00:00<00:00,  2.13it/s, loss=0.9769]
+Epoch 9/20 [Train]: 100%|█| 1/1 [00:01<00:00,  1.53s/it, loss=0.7015
+Epoch 9/20 [Val]: 100%|██| 1/1 [00:00<00:00,  2.03it/s, loss=0.9687]
+Epoch 10/20 [Train]: 100%|█| 1/1 [00:01<00:00,  1.40s/it, loss=0.676
+Epoch 10/20 [Val]: 100%|█| 1/1 [00:00<00:00,  2.16it/s, loss=0.9597]
+Epoch 11/20 [Train]: 100%|█| 1/1 [00:01<00:00,  1.27s/it, loss=0.652
+Epoch 11/20 [Val]: 100%|█| 1/1 [00:00<00:00,  1.59it/s, loss=0.9501]
+Epoch 12/20 [Train]: 100%|██| 1/1 [00:01<00:00,  1.32s/it, loss=0.6318]
+Epoch 12/20 [Val]: 100%|████| 1/1 [00:00<00:00,  2.08it/s, loss=0.9397]
+Epoch 13/20 [Train]: 100%|██| 1/1 [00:01<00:00,  1.49s/it, loss=0.6128]
+Epoch 13/20 [Val]: 100%|████| 1/1 [00:00<00:00,  2.07it/s, loss=0.9277]
+Epoch 14/20 [Train]: 100%|██| 1/1 [00:01<00:00,  1.44s/it, loss=0.5950]
+Epoch 14/20 [Val]: 100%|████| 1/1 [00:00<00:00,  2.19it/s, loss=0.9141]
+Epoch 15/20 [Train]: 100%|██| 1/1 [00:01<00:00,  1.36s/it, loss=0.5780]
+Epoch 15/20 [Val]: 100%|████| 1/1 [00:00<00:00,  1.96it/s, loss=0.8994]
+Epoch 16/20 [Train]: 100%|██| 1/1 [00:01<00:00,  1.39s/it, loss=0.5615]
+Epoch 16/20 [Val]: 100%|████| 1/1 [00:00<00:00,  2.02it/s, loss=0.8837]

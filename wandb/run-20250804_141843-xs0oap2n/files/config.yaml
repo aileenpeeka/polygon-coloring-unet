@@ -1,0 +1,71 @@
+wandb_version: 1
+
+_wandb:
+  desc: null
+  value:
+    python_version: 3.9.23
+    cli_version: 0.21.0
+    framework: torch
+    is_jupyter_run: false
+    is_kaggle_kernel: true
+    start_time: 1754297323
+    t:
+      1:
+      - 1
+      - 41
+      2:
+      - 1
+      - 41
+      3:
+      - 16
+      - 37
+      - 42
+      4: 3.9.23
+      5: 0.21.0
+      8:
+      - 2
+      13: darwin-arm64
+    e:
+      tt2sn4u9jqcm4nollfpn1sf0cnlqwdyz:
+        os: macOS-15.3.1-arm64-arm-64bit
+        python: CPython 3.9.23
+        started_at: '2025-08-04T08:48:43.378504Z'
+        program: /Users/aileenpeeka/coding/Projects/ayna_ml_assignment/train.py
+        code_path: train.py
+        code_path_local: train.py
+        email: peekaaileen@gmail.com
+        root: /Users/aileenpeeka/coding/Projects/ayna_ml_assignment
+        host: Aileens-MacBook-Pro.local
+        executable: /opt/anaconda3/envs/ayna_ml/bin/python
+        cpu_count: 8
+        cpu_count_logical: 8
+        disk:
+          /:
+            total: '494384795648'
+            used: '374701514752'
+        memory:
+          total: '8589934592'
+        apple:
+          name: Apple M1
+          ecpu_cores: 4
+          pcpu_cores: 4
+          gpu_cores: 8
+          memory_gb: 8
+          swap_total_bytes: '1073741824'
+          ram_total_bytes: '8589934592'
+        writer_id: tt2sn4u9jqcm4nollfpn1sf0cnlqwdyz
+learning_rate:
+  desc: null
+  value: 0.0001
+batch_size:
+  desc: null
+  value: 8
+epochs:
+  desc: null
+  value: 20
+architecture:
+  desc: null
+  value: UNet
+dataset:
+  desc: null
+  value: polygon-segmentation

@@ -1,0 +1,69 @@
+Using device: cpu
+Training samples: 1
+Validation samples: 1
+Model parameters: 31,044,227
+Epoch 1/20 [Train]:   0%|                                                    | 0/1 [00:00<?, ?it/s]
+Traceback (most recent call last):
+  File "/Users/aileenpeeka/coding/Projects/ayna_ml_assignment/train.py", line 166, in <module>
+    train_model()
+  File "/Users/aileenpeeka/coding/Projects/ayna_ml_assignment/train.py", line 83, in train_model
+    preds = model(imgs)
+  File "/opt/anaconda3/envs/ayna_ml/lib/python3.9/site-packages/torch/nn/modules/module.py", line 1751, in _wrapped_call_impl
+    return self._call_impl(*args, **kwargs)
+  File "/opt/anaconda3/envs/ayna_ml/lib/python3.9/site-packages/torch/nn/modules/module.py", line 1762, in _call_impl
+    return forward_call(*args, **kwargs)
+  File "/Users/aileenpeeka/coding/Projects/ayna_ml_assignment/model/unet.py", line 40, in forward
+    x1 = self.inc(x)
+  File "/opt/anaconda3/envs/ayna_ml/lib/python3.9/site-packages/torch/nn/modules/module.py", line 1751, in _wrapped_call_impl
+    return self._call_impl(*args, **kwargs)
+  File "/opt/anaconda3/envs/ayna_ml/lib/python3.9/site-packages/torch/nn/modules/module.py", line 1762, in _call_impl
+    return forward_call(*args, **kwargs)
+  File "/Users/aileenpeeka/coding/Projects/ayna_ml_assignment/model/unet.py", line 17, in forward
+    return self.double_conv(x)
+  File "/opt/anaconda3/envs/ayna_ml/lib/python3.9/site-packages/torch/nn/modules/module.py", line 1751, in _wrapped_call_impl
+    return self._call_impl(*args, **kwargs)
+  File "/opt/anaconda3/envs/ayna_ml/lib/python3.9/site-packages/torch/nn/modules/module.py", line 1762, in _call_impl
+    return forward_call(*args, **kwargs)
+  File "/opt/anaconda3/envs/ayna_ml/lib/python3.9/site-packages/torch/nn/modules/container.py", line 240, in forward
+    input = module(input)
+  File "/opt/anaconda3/envs/ayna_ml/lib/python3.9/site-packages/torch/nn/modules/module.py", line 1751, in _wrapped_call_impl
+    return self._call_impl(*args, **kwargs)
+  File "/opt/anaconda3/envs/ayna_ml/lib/python3.9/site-packages/torch/nn/modules/module.py", line 1762, in _call_impl
+    return forward_call(*args, **kwargs)
+  File "/opt/anaconda3/envs/ayna_ml/lib/python3.9/site-packages/torch/nn/modules/conv.py", line 554, in forward
+    return self._conv_forward(input, self.weight, self.bias)
+  File "/opt/anaconda3/envs/ayna_ml/lib/python3.9/site-packages/torch/nn/modules/conv.py", line 549, in _conv_forward
+    return F.conv2d(
+RuntimeError: Input type (double) and bias type (float) should be the same
+Traceback (most recent call last):
+  File "/Users/aileenpeeka/coding/Projects/ayna_ml_assignment/train.py", line 166, in <module>
+    train_model()
+  File "/Users/aileenpeeka/coding/Projects/ayna_ml_assignment/train.py", line 83, in train_model
+    preds = model(imgs)
+  File "/opt/anaconda3/envs/ayna_ml/lib/python3.9/site-packages/torch/nn/modules/module.py", line 1751, in _wrapped_call_impl
+    return self._call_impl(*args, **kwargs)
+  File "/opt/anaconda3/envs/ayna_ml/lib/python3.9/site-packages/torch/nn/modules/module.py", line 1762, in _call_impl
+    return forward_call(*args, **kwargs)
+  File "/Users/aileenpeeka/coding/Projects/ayna_ml_assignment/model/unet.py", line 40, in forward
+    x1 = self.inc(x)
+  File "/opt/anaconda3/envs/ayna_ml/lib/python3.9/site-packages/torch/nn/modules/module.py", line 1751, in _wrapped_call_impl
+    return self._call_impl(*args, **kwargs)
+  File "/opt/anaconda3/envs/ayna_ml/lib/python3.9/site-packages/torch/nn/modules/module.py", line 1762, in _call_impl
+    return forward_call(*args, **kwargs)
+  File "/Users/aileenpeeka/coding/Projects/ayna_ml_assignment/model/unet.py", line 17, in forward
+    return self.double_conv(x)
+  File "/opt/anaconda3/envs/ayna_ml/lib/python3.9/site-packages/torch/nn/modules/module.py", line 1751, in _wrapped_call_impl
+    return self._call_impl(*args, **kwargs)
+  File "/opt/anaconda3/envs/ayna_ml/lib/python3.9/site-packages/torch/nn/modules/module.py", line 1762, in _call_impl
+    return forward_call(*args, **kwargs)
+  File "/opt/anaconda3/envs/ayna_ml/lib/python3.9/site-packages/torch/nn/modules/container.py", line 240, in forward
+    input = module(input)
+  File "/opt/anaconda3/envs/ayna_ml/lib/python3.9/site-packages/torch/nn/modules/module.py", line 1751, in _wrapped_call_impl
+    return self._call_impl(*args, **kwargs)
+  File "/opt/anaconda3/envs/ayna_ml/lib/python3.9/site-packages/torch/nn/modules/module.py", line 1762, in _call_impl
+    return forward_call(*args, **kwargs)
+  File "/opt/anaconda3/envs/ayna_ml/lib/python3.9/site-packages/torch/nn/modules/conv.py", line 554, in forward
+    return self._conv_forward(input, self.weight, self.bias)
+  File "/opt/anaconda3/envs/ayna_ml/lib/python3.9/site-packages/torch/nn/modules/conv.py", line 549, in _conv_forward
+    return F.conv2d(
+RuntimeError: Input type (double) and bias type (float) should be the same

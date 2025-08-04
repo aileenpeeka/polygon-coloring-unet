@@ -1,0 +1,43 @@
+_wandb:
+    value:
+        cli_version: 0.21.0
+        e:
+            uv4zox60pnll715iv5snznfqmv24noc4:
+                codePath: train.py
+                codePathLocal: train.py
+                email: peekaaileen@gmail.com
+                executable: /opt/anaconda3/envs/ayna_ml/bin/python
+                host: Aileens-MacBook-Pro.local
+                os: macOS-15.3.1-arm64-arm-64bit
+                program: /Users/aileenpeeka/coding/Projects/ayna_ml_assignment/train.py
+                python: CPython 3.9.23
+                root: /Users/aileenpeeka/coding/Projects/ayna_ml_assignment
+                startedAt: "2025-08-04T08:46:26.109170Z"
+                writerId: uv4zox60pnll715iv5snznfqmv24noc4
+        m: []
+        python_version: 3.9.23
+        t:
+            "1":
+                - 1
+                - 41
+            "2":
+                - 1
+                - 41
+            "3":
+                - 16
+            "4": 3.9.23
+            "5": 0.21.0
+            "8":
+                - 2
+            "12": 0.21.0
+            "13": darwin-arm64
+architecture:
+    value: UNet
+batch_size:
+    value: 8
+dataset:
+    value: polygon-segmentation
+epochs:
+    value: 20
+learning_rate:
+    value: 0.0001

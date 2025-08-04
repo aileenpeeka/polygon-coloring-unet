@@ -1,0 +1,8 @@
+{
+  "total_parameters": 31044227,
+  "trainable_parameters": 31044227,
+  "model_size_mb": 118.4243278503418,
+  "convolutional_params": 28257792,
+  "batch_norm_params": 0,
+  "linear_params": 0
+}
