@@ -1,7 +1,6 @@
 # Ayna ML Assignment - Polygon Segmentation with Color Conditioning
 
-This project implements a UNet-based deep learning model for polygon segmentation with color conditioning. The model takes an input image and a color condition to generate a segmented output where polygons are colored according to the specified condition.
-
+This project implements a UNet-based deep learning model for polygon segmentation with color conditioning. The model takes an input image and a color name and generates an output where polygons are filled with the specified color.
 ## 🏗️ Architecture
 
 ### UNet Model
