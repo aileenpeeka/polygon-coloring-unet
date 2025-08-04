@@ -1,6 +1,6 @@
 # Ayna ML Assignment - Polygon Segmentation with Color Conditioning
 
-This project implements a UNet based deep learning model for polygon segmentation with color conditioning. The model takes an input image and a color name and generates an output where polygons are filled with the specified color.
+This project implements a UNet-based deep learning model for polygon segmentation with color conditioning. The model takes an input image and a color condition to generate a segmented output where polygons are colored according to the specified condition.
 
 ## Architecture
 
@@ -31,12 +31,12 @@ ayna_ml_assignment/
 │       ├── outputs/         # Validation target images
 │       └── data.json        # Validation metadata
 ├── model/
-│   └── unet.py             # UNet model implementation
-├── train.py                # Training script with wandb integration
-├── inference.ipynb         # Jupyter notebook for inference
-├── utils.py                # Dataset loader and utilities
-├── requirements.txt        # Python dependencies
-└── README.md               # This file
+│   └── unet.py              # UNet model implementation
+├── train.py                 # Training script with wandb integration
+├── inference.ipynb          # Jupyter notebook for inference
+├── utils.py                 # Dataset loader and utilities
+├── requirements.txt         # Python dependencies
+└── README.md                # This file
 ```
 
 ## Setup Instructions
@@ -50,6 +50,7 @@ pip install -r requirements.txt
 ### 2. Dataset Preparation
 
 Place your dataset in the following structure:
+
 - `dataset/training/inputs/` - Training input images
 - `dataset/training/outputs/` - Training target images  
 - `dataset/training/data.json` - Training metadata
@@ -58,6 +59,7 @@ Place your dataset in the following structure:
 - `dataset/validation/data.json` - Validation metadata
 
 The `data.json` file should contain:
+
 ```json
 [
   {
@@ -75,6 +77,7 @@ python train.py
 ```
 
 The training script will:
+
 - Initialize wandb logging
 - Train for 20 epochs with early stopping
 - Save the best model as `best_unet_model.pth`
@@ -84,31 +87,34 @@ The training script will:
 ### 4. Inference
 
 Open `inference.ipynb` in Jupyter:
+
 ```bash
 jupyter notebook inference.ipynb
 ```
 
 ## Hyperparameters
 
-| Parameter | Value | Description |
-|-----------|-------|-------------|
-| Learning Rate | 1e-4 | Adam optimizer learning rate |
-| Batch Size | 8 | Training batch size |
-| Epochs | 20 | Maximum training epochs |
-| Loss Function | MSE | Mean squared error loss |
-| Optimizer | Adam | Adam optimizer with weight decay |
-| Scheduler | ReduceLROnPlateau | Learning rate reduction on plateau |
+| Parameter      | Value               | Description                             |
+|----------------|---------------------|-----------------------------------------|
+| Learning Rate  | 1e-4                | Adam optimizer learning rate            |
+| Batch Size     | 8                   | Training batch size                     |
+| Epochs         | 20                  | Maximum training epochs                 |
+| Loss Function  | MSE                 | Mean squared error loss                 |
+| Optimizer      | Adam                | Adam optimizer with weight decay        |
+| Scheduler      | ReduceLROnPlateau   | Learning rate reduction on plateau      |
 
 ## Training Dynamics
 
 ### Loss Curves
 The training script automatically generates and saves training curves showing:
+
 - Training loss over epochs
 - Validation loss over epochs
 - Learning rate scheduling
 
 ### Wandb Integration
 All training metrics are logged to wandb including:
+
 - Train/validation loss
 - Learning rate
 - Model checkpoints
@@ -117,15 +123,14 @@ All training metrics are logged to wandb including:
 ## Model Performance
 
 ### Key Features
-- **Color Conditioning**: The model learns to segment polygons based on color conditions
-- **Skip Connections**: UNet architecture preserves spatial information
-- **Batch Normalization**: Stabilizes training and improves convergence
-- **Data Augmentation**: Ready for future augmentation techniques
+- **Color Conditioning**: Segments polygons based on color conditions
+- **Skip Connections**: Preserves spatial information
+- **Batch Normalization**: Stabilizes training
+- **Data Augmentation**: Ready for future enhancements
 
 ### Expected Behavior
-- Input: Image with polygons + color condition
-- Output: Segmented image with polygons colored according to condition
-- The model should learn to identify polygon boundaries and apply the specified color
+- **Input**: Image with polygons + color condition
+- **Output**: Segmented polygons filled with specified color
 
 ## Troubleshooting
 
@@ -136,42 +141,45 @@ All training metrics are logged to wandb including:
    - Use CPU training by setting `device = "cpu"`
 
 2. **Dataset Not Found**
-   - Ensure dataset structure matches the expected format
-   - Check file paths in `data.json`
+   - Verify dataset paths and structure match the specified format
 
 3. **Model Not Loading**
-   - Verify `best_unet_model.pth` exists
-   - Check model architecture matches saved weights
+   - Ensure `best_unet_model.pth` exists and matches the model architecture
 
 ### Debugging Tips
-- Use the inference notebook to test individual predictions
-- Check wandb logs for training dynamics
-- Monitor GPU memory usage during training
+- Check individual predictions via inference notebook
+- Review wandb logs for detailed metrics
+- Monitor GPU memory during training
 
 ## Future Improvements
 
-1. **Data Augmentation**
-   - Rotation, scaling, flipping
-   - Color jittering
-   - Random cropping
+- Data Augmentation (rotation, scaling, flipping, color jittering)
+- Advanced Architectures (attention, residual connections, multi-scale)
+- Improved Loss Functions (Dice loss, Focal loss)
+- Additional Metrics (IoU, Dice coefficient, pixel accuracy)
 
-2. **Advanced Architectures**
-   - Attention mechanisms
-   - Residual connections
-   - Multi-scale processing
+## Dataset Included
 
-3. **Loss Functions**
-   - Dice loss for better segmentation
-   - Focal loss for class imbalance
-   - Combined losses
-
-4. **Evaluation Metrics**
-   - IoU (Intersection over Union)
-   - Dice coefficient
-   - Pixel accuracy
+- **Note**: The validation dataset is included for easy inference testing.
 
 ## Model & Logs
 
-- [ Download Trained Models](https://drive.google.com/drive/folders/1l7JGHDUbOGKg-59sKNpKlNTePIZIV19z)
-- [ Training Metrics on wandb](https://wandb.ai/peekaaileen-vellore-institute-of-technology/ayna-ml-assignment)
+- [📂 Download Trained Models](https://drive.google.com/drive/folders/1l7JGHDUbOGKg-59sKNpKlNTePIZIV19z)
+- [📊 Training Metrics on wandb](https://wandb.ai/peekaaileen-vellore-institute-of-technology/ayna-ml-assignment)
 
+## License
+
+This project is part of the Ayna ML Assignment.
+
+## Support
+
+For questions or issues:
+
+- Review the troubleshooting section above.
+- Check wandb logs for detailed training metrics.
+- Test with the inference notebook provided.
+- Raise an issue with detailed error information if needed.
+
+---
+
+**Note**: Robust error handling and fallback mechanisms are included, making this implementation suitable for development and testing even without a complete dataset.
