@@ -172,6 +172,6 @@ All training metrics are logged to wandb including:
 
 ## Model & Logs
 
-- [📂 Download Trained Models](https://drive.google.com/drive/folders/1l7JGHDUbOGKg-59sKNpKlNTePIZIV19z)
-- [📊 Training Metrics on wandb](https://wandb.ai/peekaaileen-vellore-institute-of-technology/ayna-ml-assignment)
+- [ Download Trained Models](https://drive.google.com/drive/folders/1l7JGHDUbOGKg-59sKNpKlNTePIZIV19z)
+- [ Training Metrics on wandb](https://wandb.ai/peekaaileen-vellore-institute-of-technology/ayna-ml-assignment)
 
